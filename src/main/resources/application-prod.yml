@@ -1,0 +1,19 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+    import: "aws-parameterstore:/config/team-service/"
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    open-in-view: false
+
+logging:
+  level:
+    root: info
+
+info:
+  team-name: ${team-name}
