@@ -26,8 +26,8 @@ Spring Boot 애플리케이션을 실행하는 EC2 인스턴스는 외부에서 
 
 ```text
 VPC CIDR: 10.0.0.0/16
-Public Subnet CIDR: <PUBLIC_SUBNET_CIDR>
-Private Subnet CIDR: <PRIVATE_SUBNET_CIDR>
+Public Subnet CIDR: 10.0.0.0/20
+Private Subnet CIDR: 10.0.128.0/20
 EC2 Public IPv4: 3.38.162.212
 ```
 
