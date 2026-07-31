@@ -3,17 +3,12 @@ spring:
     activate:
       on-profile: prod
 
-    import: "aws-parameterstore:/config/team-service/"
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
       ddl-auto: update
-
-    open-in-view: false
-
-logging:
-  level:
-    root: info
-
-info:
-  team-name: ${team-name}

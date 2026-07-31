@@ -9,8 +9,11 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info
+        include: health
 
-  info:
-    env:
-      enabled: true
+  endpoint:
+    health:
+      show-details: never
+      show-components: never
+      probes:
+        enabled: false
