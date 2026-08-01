@@ -12,11 +12,14 @@ public class MemberResponse {
 
     private final String mbti;
 
+    private final String profileImageKey;
+
     public MemberResponse(Member member) {
         this.id = member.getId();
         this.name = member.getName();
         this.age = member.getAge();
         this.mbti = member.getMbti();
+        this.profileImageKey = member.getProfileImageKey();
     }
 
     public Long getId() {
@@ -33,5 +36,9 @@ public class MemberResponse {
 
     public String getMbti() {
         return mbti;
+    }
+
+    public String getProfileImageKey() {
+        return profileImageKey;
     }
 }

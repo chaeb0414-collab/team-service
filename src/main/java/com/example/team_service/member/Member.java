@@ -20,6 +20,8 @@ public class Member {
 
     private String mbti;
 
+    private String profileImageKey;
+
     protected Member() {
     }
 
@@ -43,5 +45,13 @@ public class Member {
 
     public String getMbti() {
         return mbti;
+    }
+
+    public String getProfileImageKey() {
+        return profileImageKey;
+    }
+
+    public void updateProfileImageKey(String profileImageKey) {
+        this.profileImageKey = profileImageKey;
     }
 }
