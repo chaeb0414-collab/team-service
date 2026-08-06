@@ -238,10 +238,10 @@ S3에 저장된 이미지에 대한 Presigned URL을 유효기간 **7일**로 �
 ### 발급받은 Presigned URL
 
 ```text
-URL: {실제 Presigned URL}
-만료 시각: {실제 만료 시각}
+URL: https://eam-service-profile-0414.s3.ap-northeast-2.amazonaws.com/profile-images/1/311769c4-73e3-4e70-821d-fd6a2d3fe4b1-test.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGgaDmFwLW5vcnRoZWFzdC0yIkcwRQIhAMFtzxpnFdj%2Bc7tmf9ZVNA5Ma1HryMOP7G0bjWoCelkiAiBE1k08LMSdT3gjsQ42qyCjaMPIEbpr40p0SHzrmL6zQirJBQgxEAAaDDU1ODMxMTEwMTIwNyIMUUwmvQQ1X8U4EermKqYF3sHJQqH3XlnDLLk%2B1e8P37NfKsLnbv8YzMVa%2FcvEZtJhozmIUJhk3v520s87jPEJcZ8gScIn83ftoyhAPRImtHDQvekL7vZ8y8FWhTBkJUTmpfeHlvN6Oit71ILQjV0ws6%2Fin1xzk1%2BRvKRe%2B5lxjHwLecTxOeZmYB9Evng26pTcCgFTpfSoRB5K%2FHurIs3Boz%2FMuZSXIcmdezVfBrAk3fk2fgzv8ZT9eM9nauT1UA6fHxOuNFZYIiaSbjvWcML2QVmMzctRluTDVYhc1YxLdwz9hUylRsVF2nto8kkBouvAdGAmSSPbvjxISFX4Q5rvnMHaDK0qxzNFhjZldVpbY59NI9JzLOJEu9fkzFYhSfxRBtjc6AIFOAn3nGdUMRmY1lbqXTL04cyoKgQ9ii05ruW8Ri599Yvrp9qBiCi6iVeqrPjREEDH7spJMZOJQbJciROH31FaF10JN4Q2o7LNnpldeImgq%2FHpkremNYXs50aw6OYj5KyRIb4QF0jjUkuwcnJU0kdNEqK4N86hZscCC9mK55VDOV23ohjX3EV3thR0DbAaI1YlK0UVkCSLylb8CN10ZbfCX08FraFuVvLUUCOEJqg26xInXdDx9%2BoOV2dAM0zywkQ6Oqnu%2F3FQOsn6HKhXQEYEnaCv9OEGcu1bzHVFjTBzSGZ9PL8iwVkfGuRec84H4KxZN9%2BDUfrAG9qBhDyIh6fIdcKJiyYo4BMXXAPOV1z%2BbOEUdyXMl02ObprPm6TQ2Zct6cDa1WZ5buwB1PBIs%2BCDyCCXsfrumXctdf%2F4kJhzoFuLhMN%2BynHcTE%2F2gsi7l8AVNkyV909B%2B3BEbVIonVFBqJJM29YIwgLtZuFd3iM%2F4p8vV8Fky0oA%2B0FdGuxBnGKo33Rpd9CNcPbmj7wG8AaiMOaYz9MGOrEBs%2B%2F99Bk2vNmU53yfTAYAT7vcEVhX0JqQsPBSWZNag7lLd%2Btu9jxrO2gESA4fEKSuYP%2BaPH1%2B0bcI%2FfgeD0H5%2BwM5HRieqXgqZsyrA5d2fYJASBCACNTGQ3L8fIfdbudFdLag1ZYEpQPH7h6k5Bm3EXMWVowySD6LxY%2FmZ4rJajuZDOM7vSr%2Fdb2q7WSnoPTTUzm4vSGFQSS9vR1pCg%2F%2Bxee%2FOex2V3M28dmJtJVnXVOv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260806T003751Z&X-Amz-SignedHeaders=host&X-Amz-Credential=ASIAYD7PPKMLZLBWYMMF%2F20260806%2Fap-northeast-2%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=85d7c40c4ff40287e1d5c2e66070a39aabef394777c94e26877fb2c510a3ff63
+만료 시각: 2026-08-13T00:37:51.272125401Z
 ```
 
-> Presigned URL은 만료되면 접근이 불가능합니다. 채점 기준일 이전에 새로 발급받아 위 값을 최신 URL로 교체해야 합니다.
+> Presigned URL은 유효기간 7일이 지나면 접근이 불가능합니다. 채점 시점 이전에 다시 만료되었다면 `GET /api/members/1/profile-image`를 재호출해 새 URL로 교체해야 합니다.
 
 ---
